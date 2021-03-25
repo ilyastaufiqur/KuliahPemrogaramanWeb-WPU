@@ -27,8 +27,15 @@ $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
     <li><?= $mhs['nama']; ?></li>
     <li><?= $mhs['email']; ?></li>
     <li><?= $mhs['jurusan']; ?></li>
-    <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
-    <li><a href="latihan3.php">Kembali Ke Data mahasiswa</a></li>
+    <li>
+      <button>
+        <a href="ubah.php?id=<?= $mhs['id']; ?>" onclick="return confirm('Apakah anda yakin ingin mengubah data')">Ubah</a>
+      </button> |
+      <button>
+        <a href="hapus.php?id=<?= $mhs['id']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data')">Hapus</a>
+      </button>
+    </li>
+    <li><a href="index.php">Kembali Ke Data mahasiswa</a></li>
   </ul>
 </body>
 
