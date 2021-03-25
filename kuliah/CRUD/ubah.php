@@ -21,7 +21,9 @@ if (isset($_POST['ubah'])) {
      document.location.href = 'index.php';
     </script>";
   } else {
-    echo "Data Gagal di ubah Ditambahkan!!!";
+    echo "D<script>
+    alert('data gagal di ubah !!!');
+   </script>";
   }
 }
 
@@ -34,49 +36,29 @@ if (isset($_POST['ubah'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tambahdata.css">
   <title>Ubah Data Mahasiswa</title>
 </head>
 
 <body>
+  <img src="img/profil1.png" alt="">
   <h3>Ubah Data Mahasiswa</h3>
-  <form action="" method="POST">
-    <input type="hidden" name="id" value="<?= $mhs['id']; ?>">
-    <ul>
-      <li>
-        <label>
-          Nama :
-          <input type="text" name="nama" autofocus required value="<?= $mhs['nama']; ?>">
-        </label>
-      </li>
-      <li>
-        <label>
-          Nim :
-          <input type="text" name="nim" required value="<?= $mhs['nim']; ?>">
-        </label>
-      </li>
-      <li>
-        <label>
-          Email :
-          <input type="text" name="email" required value="<?= $mhs['email']; ?>">
-        </label>
-      </li>
-      <li>
-        <label>
-          Jurusan :
-          <input type="text" name="jurusan" required value="<?= $mhs['jurusan']; ?>">
-        </label>
-      </li>
-      <li>
-        <label>
-          Gambar :
-          <input type="text" name="gambar" value="<?= $mhs['gambar']; ?>">
-        </label>
-      </li>
-      <li>
-        <button type="submit" name="ubah"> Ubah Data</button>
-      </li>
-    </ul>
-  </form>
+  <div id="ubah">
+    <form action="" method="POST">
+      <input type="hidden" name="id" value="<?= $mhs['id']; ?>"><br>
+      <label>Nama</label><br>
+      <input type="text" name="nama" autofocus required value="<?= $mhs['nama']; ?>"><br>
+      <label>Nim</label><br>
+      <input type="text" name="nim" required value="<?= $mhs['nim']; ?>"><br>
+      <label>Email</label><br>
+      <input type="text" name="email" required value="<?= $mhs['email']; ?>"><br>
+      <label>Jurusan</label><br>
+      <input type="text" name="jurusan" required value="<?= $mhs['jurusan']; ?>"><br>
+      <label>Gambar</label><br>
+      <input type="text" name="gambar" value="<?= $mhs['gambar']; ?>"><br>
+      <button type="submit" name="ubah"> Ubah Data</button>
+    </form>
+  </div>
 </body>
 
 </html>

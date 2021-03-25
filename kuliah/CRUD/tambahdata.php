@@ -23,48 +23,28 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tambahdata.css">
   <title>Tambah Data Mahasiswa</title>
 </head>
 
 <body>
-  <h3>Tambah Data Mahasiswa</h3>
-  <form action="" method="POST">
-    <ul>
-      <li>
-        <label>
-          Nama :
-          <input type="text" name="nama" autofocus required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Nim :
-          <input type="text" name="nim" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Email :
-          <input type="text" name="email" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Jurusan :
-          <input type="text" name="jurusan" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Gambar :
-          <input type="text" name="gambar">
-        </label>
-      </li>
-      <li>
-        <button type="submit" name="tambah"> Tambah Data</button>
-      </li>
-    </ul>
-  </form>
+  <img src="img/profil1.png" alt="">
+  <div id="tambahdata">
+    <h3>Tambah Data Mahasiswa</h3>
+    <form action="" method="POST">
+      <label>Nama</label><br>
+      <input type="text" name="nama" autofocus required><br>
+      <label>Nim</label><br>
+      <input type="text" name="nim" required><br>
+      <label>Email</label><br>
+      <input type="text" name="email" required><br>
+      <label>Jurusan</label><br>
+      <input type="text" name="jurusan" required><br>
+      <label>Gambar</label><br>
+      <input type="text" name="gambar"><br>
+      <button type="submit" name="tambah"> Tambah Data</button>
+    </form>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+/* css untuk ubah.php juga */
+body{
+  font-family: cursive;
+  background-color: floralwhite;
+  text-align: center;
+
+}
+input{
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+button{
+  font-family: fantasy;
+  font-size: 20px;
+  margin-top: 7px;
+  color: coral;
+  background-color: cornsilk;
+  border-radius: 10px;
+}
+label{
+  margin-right: 175px;
+}
+#ubah{
+  background-color: silver;
+  text-align: center;
+  border-radius: 500px;
+}
+img{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border-style: groove;
+  border-color: coral;
+}

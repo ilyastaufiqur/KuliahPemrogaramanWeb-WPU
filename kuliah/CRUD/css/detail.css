@@ -1,0 +1,28 @@
+
+body{
+  background-color: skyblue;
+}
+#detail{
+  color: red;
+}
+tr{
+  font-family: cursive;
+}
+.detail{
+  font-family: cursive;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#ubah , #hapus{
+  font-size: medium;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: tomato;
+}
+ul{
+  list-style-type: none;
+}
+h3{
+  margin-left: 20px;
+}

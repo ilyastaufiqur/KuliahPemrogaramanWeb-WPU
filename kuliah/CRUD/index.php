@@ -11,12 +11,13 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
   <title>Daftar Mahasiswa</title>
 </head>
 
 <body>
-  <h3>Daftar Mahasiswa</h3>
-  <button>
+  <h3 id="daftar-mahasiswa">Daftar Mahasiswa</h3>
+  <button id="btn-tambah-data">
     <a href="tambahdata.php">Tambah Data</a>
   </button>
   <br>
@@ -34,7 +35,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
         <td><img src="img/<?= $mhs['gambar']; ?>"></td>
         <td><?= $mhs['nama']; ?></td>
         <td>
-          <a href="detail.php?id=<?= $mhs['id']; ?>">Lihat Detail</a>
+          <a id="detail" href="detail.php?id=<?= $mhs['id']; ?>">Lihat Detail</a>
         </td>
       </tr>
     <?php endforeach; ?>

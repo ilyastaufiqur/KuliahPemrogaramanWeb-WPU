@@ -16,10 +16,11 @@ $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/detail.css">
   <title>Detail Mahasiswa</title>
 </head>
 
-<body>
+<body class="detail">
   <h3>Detail Mahasiswa</h3>
   <ul>
     <li><img src="img/<?= $mhs['gambar']; ?>"></li>
@@ -28,10 +29,10 @@ $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
     <li><?= $mhs['email']; ?></li>
     <li><?= $mhs['jurusan']; ?></li>
     <li>
-      <button>
+      <button id="ubah">
         <a href="ubah.php?id=<?= $mhs['id']; ?>" onclick="return confirm('Apakah anda yakin ingin mengubah data')">Ubah</a>
       </button> |
-      <button>
+      <button id="hapus">
         <a href="hapus.php?id=<?= $mhs['id']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data')">Hapus</a>
       </button>
     </li>
